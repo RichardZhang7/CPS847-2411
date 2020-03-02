@@ -3,4 +3,4 @@ Language: python
 python: 3.8.1
 
 script:
-  - python sumTest.py
+  - coverage run cps2411function.py
