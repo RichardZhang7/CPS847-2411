@@ -3,4 +3,4 @@ Language: python
 python: 3.8.1
 
 script:
-  - python cps2411function.py
+  - python -m unittest cps2411function.py
