@@ -3,4 +3,4 @@ Language: python
 python: 3.8.1
 
 script:
-  - py sumTest.py
+  - python sumTest.py
