@@ -1,0 +1,6 @@
+Language: python
+
+python: 3.8.1
+
+script:
+  - coverage run sumTest.py
