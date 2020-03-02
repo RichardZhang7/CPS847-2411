@@ -18,6 +18,6 @@ before_install:
 deploy:
   provider: scripts
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet ${TRAVIS_BUILD_DIR}/dat ${DEPLOY_USER}@${DEPLOY_SERVER}:/home/${DEPLOY_USER}
+  script: rsync -r --delete-after --quiet ${TRAVIS_BUILD_DIR}/dat ${DEPLOY_USER}@${DEPLOY_SERVER}:/home/avm/courses/cps847/${DEPLOY_USER}
   on:
     branch: master
