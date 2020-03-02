@@ -1,2 +1,2 @@
-cps2411(y):
+def cps2411(y):
   return (6 * y)
