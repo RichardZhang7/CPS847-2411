@@ -14,9 +14,10 @@ before_install:
   - eval "$(ssh-agent -s)"
   - chmod 600 /tmp/deploy_rsa
   - ssh-add /tmp/deploy_rsa
+  
 deploy:
-  provider: script
+  provider: scripts
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet ${TRAVIS_BUILD_DIR}/dat ${DEPLOY_USER}@${DEPLOY_SERVER}:home/avm/courses/cps847/${DEPLOY_USER}
-  on:
+  script: rsync -r --delete-after --quiet ${TRAVIS_BUILD_DIR}/dat ${DEPLOY_USER}@${DEPLOY_SERVER}:/home/avm/courses/cps847/${DEPLOY_USER}
+  on:s
     branch: master
