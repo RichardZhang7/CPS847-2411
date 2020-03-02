@@ -5,7 +5,7 @@ class productTest(unittest.TestCase):
 
     def testProduct(self):
         ans = cps2411function.cps2411(7)
-        self.assertEqual(422, ans)
+        self.assertEqual(42, ans)
         
 
 if __name__ == '__main__':
