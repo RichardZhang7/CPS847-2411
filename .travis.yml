@@ -3,4 +3,4 @@ Language: python
 python: 3.8.1
 
 script:
-  - coverage run cps2411function.py
+  - run cps2411function.py
