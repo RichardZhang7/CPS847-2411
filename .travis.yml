@@ -1,6 +1,7 @@
 Language: python
-
 python: 3.8.1
-
 script:
-  - python test.py
+- python test.py
+before_install:
+- openssl aes-256-cbc -K $encrypted_8809f85d1f7a_key -iv $encrypted_8809f85d1f7a_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
