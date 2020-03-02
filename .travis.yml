@@ -3,4 +3,4 @@ Language: python
 python: 3.8.1
 
 script:
-  - python test.py
+  - python -m unittest test.py
